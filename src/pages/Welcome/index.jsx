@@ -1,10 +1,10 @@
 import React from "react";
 
-const Welcome = () => {
+export const Welcome = () => {
 
     return (
         <></>
     );
 };
 
-export default Welcome;
+
