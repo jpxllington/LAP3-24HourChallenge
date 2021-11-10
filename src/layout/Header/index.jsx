@@ -1,5 +1,7 @@
 import React from 'react';
+import { getResults } from '../../actions/GitHubAPI';
 import { Form } from '../../components/Form/index';
+import { getResults } from '../../actions/GitHubAPI';
 import './style.css';
 
 export function Header() {
@@ -9,7 +11,7 @@ export function Header() {
                 <h1>GitHub Repo Tracker</h1>
             </div> 
             <h4 className="enterUser">Enter GitHub username</h4>
-            <Form/>
+            <Form getResults={getResults}/>
         </header>
     )
 }
