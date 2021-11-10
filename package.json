@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest --setupFilesAfterEnv ./src/test/setupTests.js",
+    "test": "jest --watch --silent",
+    "coverage": "jest --silent --coverage --watchAll=false",
     "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
@@ -14,6 +15,10 @@
       "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "<rootDir>/__mocks__/fileMock.js",
       "\\.(css|less)$": "<rootDir>/__mocks__/styleMock.js"
     },
+    "coveragePathIgnorePatterns": [
+      "/node_modules/",
+      "/actions/"
+    ],
     "testEnvironment": "jsdom"
   },
   "repository": {
