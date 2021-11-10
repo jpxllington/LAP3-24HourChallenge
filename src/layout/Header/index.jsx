@@ -5,9 +5,11 @@ import './style.css';
 export function Header() {
     return(
         <header>
-            <h1>GitHub Repo Tracker</h1>
-            <h4>Enter GitHub username</h4>
-            <Form getResults={getResults}/>
+            <div className="upperHeader">
+                <h1>GitHub Repo Tracker</h1>
+            </div> 
+            <h4 className="enterUser">Enter GitHub username</h4>
+           <Form />
         </header>
     )
 }

@@ -2,31 +2,15 @@ import React, { useState } from 'react';
 import { useDispatch } from 'react-redux';
 import './style.css'
 
-export function Form ({getResults}) {
+export function Form () {
 
-    const [username, setUsername] = useState('');
-    const dispatch = useDispatch();
-
-    function updateInput(e) {
-        setUsername(e.target.value);
-    }
-
-    async function handleSubmit(e) {
-        try {
-            e.preventDefault();
-            await getResults(dispatch, username);
-            document.location = '/user'
-        }catch(err){
-            console.log(err)
-        }
-        setUsername('');
-    }
+    
 
     return (
-        <form aria-label="form" onSubmit={handleSubmit}>
+        <form className="userform"aria-label="form" >
             <label htmlFor="username"></label>
-            <input id="username" type="text" placeholder='username' value={username} onChange={updateInput} />
-            <input type="submit" value="submit" />
+            <input className="userInput" id="username" type="text" placeholder='username' autoComplete="false" />
+            <input className="userSubmit"type="submit" value="submit" />
         </form>
     )
 }

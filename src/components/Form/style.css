@@ -1,0 +1,28 @@
+.userform {
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.userInput {
+    text-align: center;
+    padding: 7px 30px;
+    border-radius: 10px;
+    outline: none;
+    margin-top: -10px;
+}
+
+.userInput:focus {
+    outline: none;
+}
+
+.userSubmit {
+    margin-top: 10px;
+    margin-bottom: 20px;
+    display: block;
+    padding: 7px 30px;
+    border-radius: 10px;
+    cursor: pointer;
+
+}
