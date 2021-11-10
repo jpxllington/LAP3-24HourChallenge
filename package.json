@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-
-    "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js"
+    "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
   },
@@ -36,6 +35,7 @@
     "@storybook/addon-actions": "^6.3.12",
     "@storybook/addon-essentials": "^6.3.12",
     "@storybook/addon-links": "^6.3.12",
+    "@storybook/addon-storyshots": "^6.3.12",
     "@storybook/builder-webpack5": "^6.3.12",
     "@storybook/manager-webpack5": "^6.3.12",
     "@storybook/react": "^6.3.12",
@@ -50,7 +50,6 @@
     "html-webpack-plugin": "^5.5.0",
     "jest": "^27.3.1",
     "redux-devtools-extension": "^2.13.9",
-    "storybook": "^6.3.12",
     "style-loader": "^3.3.1",
     "webpack": "^5.63.0",
     "webpack-cli": "^4.9.1",
