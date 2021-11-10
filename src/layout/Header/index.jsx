@@ -1,7 +1,7 @@
 import React from 'react';
 import './style.css';
 
-function Header() {
+export function Header() {
     return(
         <header>
             <h1>GitHub Repo Tracker</h1>
@@ -11,4 +11,3 @@ function Header() {
     )
 }
 
-export default Header;
