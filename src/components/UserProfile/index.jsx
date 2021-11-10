@@ -4,7 +4,7 @@ import "./style.css";
 
 export function UserCont() {
 
-    const user = useSelector((state) => state.result.user);
+    const user = useSelector((state) => state.result[0]);
     const error = useSelector((state) => state.error);
 
     const [userData, setUserData] = useState();
@@ -15,12 +15,16 @@ export function UserCont() {
           setUserData(
             <section aria-label="user-info" className="userInfoCont">
               <div className="user-info">
-                <span role="userLogin" className="user-login">testing login{user.login}</span>
+                <span role="userLogin" className="user-login">{user.owner.login}</span>
                 <br />
-                <span role="userName" className="user-name">testing name{user.name}</span>
+                {/* <span role="userName" className="user-name">{user.name}</span> */}
               </div>
     
-              <img className="profile-img" src={user.avatar_url} />
+              <img className="profile-img" src={user.owner.avatar_url} alt="profile picture"/>
+    
+              <div className="user-bio">
+                <p role="user-bio">{user.bio}</p>
+              </div>
             </section>
           )
         };
