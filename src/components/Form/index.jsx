@@ -8,7 +8,7 @@ import './style.css'
 export function Form ({ getResults }) {
 
     const [username, setUsername] = useState('');
-    const dispatch = useDispatch();
+
 
     function updateInput(e) {
         setUsername(e.target.value);
@@ -32,11 +32,9 @@ export function Form ({ getResults }) {
     const handleSubmit = async(e) => {
         e.preventDefault();
         username = e.target.username.value;
-        console.log(username);
         let repoData = await fetchUser(username);
-        console.log(repoData);
         dispatch({type:"SET_USER", payload:repoData});
-        history.push('/repo')
+        document.location = '/user'
     }
 
     return (

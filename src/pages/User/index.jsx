@@ -1,15 +1,22 @@
 import React from 'react';
 import { UserCont } from '../../components/UserProfile/index';
-import { RepoCard } from '../../components/RepoCard/index'
+import { useSelector } from 'react-redux';
+import { RepoCard } from "../../components"
 
 export const User = () => {
+    let repoData = useSelector(store => store.result)
     return (
         <>
-            <main className="userPage">
-            <UserCont />
-            <RepoCard />
-            
-            </main>
+
+            <div className="userPage">
+                <UserCont />
+                {
+                repoData.map(repo =>(
+                    <RepoCard  repo={repo}/>
+                ))
+            }
+            </div>
+
         </>
     )
 }
