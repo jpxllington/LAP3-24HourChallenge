@@ -1,0 +1,33 @@
+.userInfoCont {
+    width: 400px;
+    height: 300px;
+    background-color: rgb(255, 255, 255);
+    align-items: center;
+    margin: auto;
+    margin-bottom: 30px;
+    border-radius: 20px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.user-info {
+    text-align: center;
+}
+
+
+.user-login {
+    font-weight: bold;
+}
+
+.user-name {
+    font-size: 1.5rem;
+}
+
+.profile-img {
+    margin-top: 5px;
+    margin-left: 25%;
+    width: 200px;
+    height: 200px;
+    border-radius: 50%;
+    border-style: none;
+    justify-items: center;
+}
