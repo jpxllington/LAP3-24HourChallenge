@@ -3,8 +3,10 @@ import { UserCont } from '../../components/UserProfile/index';
 
 export const User = () => {
     return (
-        <body className="userPage">
+        <>
+            <body className="userPage">
             <UserCont />
-        </body>
+            </body>
+        </>
     )
 }
