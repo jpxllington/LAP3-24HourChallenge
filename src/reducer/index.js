@@ -7,7 +7,7 @@ const initState =
     error: null
 }
 
-const searchReducer = (state = initState, action) => {
+export const searchReducer = (state = initState, action) => {
     switch (action.type) {
         case 'LOADING':
             return {...state, error: null}
@@ -20,4 +20,3 @@ const searchReducer = (state = initState, action) => {
     }
 }
 
-export default searchReducer
