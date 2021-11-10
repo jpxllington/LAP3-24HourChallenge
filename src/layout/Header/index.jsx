@@ -1,5 +1,4 @@
 import React from 'react';
-import { getResults } from '../../actions/GitHubAPI';
 import { Form } from '../../components/Form/index';
 import { getResults } from '../../actions/GitHubAPI';
 import './style.css';
