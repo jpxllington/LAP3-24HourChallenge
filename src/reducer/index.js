@@ -21,10 +21,10 @@ export const searchReducer = (state = initState, action) => {
             console.log(typeof action.payload);
             localStorage.setItem("userData", JSON.stringify(action.payload))
             return { ...state, result: action.payload}
-            
         default:
             let userData = localStorage.getItem('userData');
             return { ...state, result: JSON.parse(userData) }
+
     }
 }
 
