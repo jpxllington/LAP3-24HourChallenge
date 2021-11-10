@@ -25,8 +25,6 @@ export function Form ({ getResults }) {
         setUsername('');
     }
 
-
-    const dispatch = useDispatch();
     const history = useHistory();
 
     const handleSubmit = async(e) => {
