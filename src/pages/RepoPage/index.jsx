@@ -4,11 +4,12 @@ import { RepoCard } from "../../components"
 
 export const RepoPage = () => {
 
-     repoData = useSelector(store => store)
-
+    let repoData = useSelector(store => store.result)
+    console.log(repoData);
 
     return(
         <>
+            <h1>hi</h1>
             {
                 repoData.map(repo =>(
                     <RepoCard  repo={repo}/>
