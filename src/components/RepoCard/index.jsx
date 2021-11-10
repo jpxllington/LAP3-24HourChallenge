@@ -15,8 +15,7 @@ export const RepoCard = (repo) => {
             {!expanded && (
                 <div className="RepoCard card-sm">
                     <h1>{repo.repo.name}</h1>
-                    <p>{repo.repo.description}</p>
-                    <div className="buttonHolder">
+                    <div className="buttonHolderMore">
                         <a className="gitButton" href={repo.repo.html_url} target="_blank"><img src={gitLogo} /></a>
                         <button className="moreDetails" onClick={expand}>View Details</button>
                     </div>
@@ -28,7 +27,7 @@ export const RepoCard = (repo) => {
                     <p>Owner: {repo.repo.owner.login}</p>
                     <p>Number of forks: {repo.repo.forks_count}</p>
                     <p>Number of stargazers {repo.repo.stargazers_count}</p>
-                    <div className="buttonHolder">
+                    <div className="buttonHolderLess">
                         <a className="gitButton" href={repo.repo.html_url} target="_blank"><img src={gitLogo} /></a>
                         <button className="lessDetails" onClick={expand}>X</button>
                     </div>
