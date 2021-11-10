@@ -1,13 +1,22 @@
-import React from "react";
-import { Header, Footer } from './layout/Header/index'
+import React from 'react';
+import { Header, Footer } from './layout'
+import { Switch, Route } from 'react-router-dom';
+import { Welcome, User } from './pages'
 import './style.css'
 
 function App () {
     return (
         <>
             <Header />
-            <h1>hello</h1>
-
+            <Switch>
+                <Route exact path="/">
+                    <Welcome />
+                </Route>
+                <Route exact path="/user">
+                    <User />
+                </Route>
+            </Switch>
+            <Footer />
         </>
     )
 }
