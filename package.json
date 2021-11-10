@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
+    "test": "jest --setupFilesAfterEnv ./src/test/setupTests.js",
     "dev": "webpack-cli serve --mode development --config config/webpack.config.dev.js",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook"
