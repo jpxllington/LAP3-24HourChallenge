@@ -13,6 +13,7 @@ export const RepoCard = (repo) => {
     return(
         <>  
             {!expanded && (
+
                 <div className="RepoCard card-sm" role="repoCardSmall">
                     <h1 id="RepoName">{repo.repo.name}</h1>
                     <p id="RepoDescription">{repo.repo.description}</p>

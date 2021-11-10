@@ -39,7 +39,6 @@ const userRequest = async (username) => {
         {
             name: data.name,
             login: data.login,
-            bio: data.bio,
             avatar_url: data.avatar_url
         }
         return filteredData;
