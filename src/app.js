@@ -1,7 +1,7 @@
 import React from 'react';
 import { Header, Footer } from './layout'
 import { Switch, Route } from 'react-router-dom';
-import { Welcome, User } from './pages'
+import * as Pages from './pages'
 import './style.css'
 
 function App () {
@@ -10,10 +10,13 @@ function App () {
             <Header />
             <Switch>
                 <Route exact path="/">
-                    <Welcome />
+                    <Pages.Welcome />
                 </Route>
-                <Route exact path="/user">
-                    <User />
+                <Route path="/user">
+                    <Pages.User />
+                </Route>
+                <Route path="/repo">
+                    <Pages.RepoPage />
                 </Route>
             </Switch>
             <Footer />

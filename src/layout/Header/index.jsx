@@ -9,7 +9,6 @@ export function Header() {
                 <h1>GitHub Repo Tracker</h1>
             </div> 
             <h4 className="enterUser">Enter GitHub username</h4>
-           <Form />
         </header>
     )
 }
