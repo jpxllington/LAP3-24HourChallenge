@@ -1,5 +1,5 @@
 import React from "react";
-import { Header, Footer } from './layout/Header/index'
+import { Header, Footer } from './layout'
 import { Switch, Route } from "react-router-dom";
 import './style.css'
 
