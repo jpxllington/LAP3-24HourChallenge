@@ -31,7 +31,7 @@ export function Form ({ getResults }) {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        username = e.target.username.value;
+        let username = e.target.username.value;
         let repoData = await fetchUser(username);
         dispatch({type:"SET_USER", payload:repoData});
         document.location = '/user'
