@@ -16,7 +16,7 @@ export const RepoCard = (repo) => {
 
                 <div className="RepoCard card-sm" role="repoCardSmall">
                     <h1 id="RepoName">{repo.repo.name}</h1>
-                    <p id="RepoDescription">{repo.repo.description}</p>
+                    {/*<p id="RepoDescription">{repo.repo.description}</p>*/}
                     <div id="buttonHolder">
                         <a className="gitButton" href={repo.repo.html_url} target="_blank"><img src={gitLogo} /></a>
                         <button className="moreDetails" role="expand" onClick={expand}>View Details</button>
