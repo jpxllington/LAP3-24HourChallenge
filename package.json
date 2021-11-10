@@ -1,0 +1,19 @@
+{
+  "name": "24hourchallenge",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/jpxllington/LAP3-24HourChallenge.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/jpxllington/LAP3-24HourChallenge/issues"
+  },
+  "homepage": "https://github.com/jpxllington/LAP3-24HourChallenge#readme"
+}
