@@ -1,12 +1,15 @@
 import React from 'react';
 import { UserCont } from '../../components/UserProfile/index';
+import { RepoCard } from '../../components/RepoCard/index'
 
 export const User = () => {
     return (
         <>
-            <body className="userPage">
+            <main className="userPage">
             <UserCont />
-            </body>
+            <RepoCard />
+            
+            </main>
         </>
     )
 }
