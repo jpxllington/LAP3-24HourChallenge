@@ -14,16 +14,16 @@ export function Form ({ getResults }) {
         setUsername(e.target.value);
     }
 
-   async function handleSubmitUser(e) {
-        try {
-            e.preventDefault();
-            await getResults(dispatch, username);
-            document.location = '/user'
-        }catch(err){
-            console.log(err)
-        }
-        setUsername('');
-    }
+//    async function handleSubmitUser(e) {
+//         try {
+//             e.preventDefault();
+//             await getResults(dispatch, username);
+//             document.location = '/user'
+//         }catch(err){
+//             console.log(err)
+//         }
+//         setUsername('');
+//     }
 
 
     const dispatch = useDispatch();
