@@ -7,14 +7,7 @@ function App () {
     return (
         <>
             <Header />
-            <Switch>
-                <Route exact path="/">
-                    <Pages.Welcome />
-                </Route>
-                <Route path="/user" >
-                        <Pages.About />
-                </Route>
-            </Switch>
+            <Footer />
         </>
     )
 }
