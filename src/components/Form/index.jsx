@@ -14,16 +14,16 @@ export function Form ({ getResults }) {
         setUsername(e.target.value);
     }
 
-   async function handleSubmitUser(e) {
-        try {
-            e.preventDefault();
-            await getResults(dispatch, username);
-            document.location = '/user'
-        }catch(err){
-            console.log(err)
-        }
-        setUsername('');
-    }
+//    async function handleSubmitUser(e) {
+//         try {
+//             e.preventDefault();
+//             await getResults(dispatch, username);
+//             document.location = '/user'
+//         }catch(err){
+//             console.log(err)
+//         }
+//         setUsername('');
+//     }
 
 
     const dispatch = useDispatch();
@@ -31,7 +31,7 @@ export function Form ({ getResults }) {
 
     const handleSubmit = async(e) => {
         e.preventDefault();
-        username = e.target.username.value;
+        let username = e.target.username.value;
         let repoData = await fetchUser(username);
         dispatch({type:"SET_USER", payload:repoData});
         document.location = '/user'
