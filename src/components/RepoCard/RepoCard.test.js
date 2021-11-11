@@ -11,7 +11,7 @@ describe("RepoCard", () => {
     test("it renders a small card", () => {
         render(<RepoCard repo={testRepo}/>)
         let card = screen.getByRole("repoCardSmall")
-        expect(card.childElementCount).toBe(3)
+        expect(card.childElementCount).toBe(2)
 
         expect(card.children[0].textContent).toBe("24 Hour Challenge")
 
